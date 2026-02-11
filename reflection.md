@@ -1,3 +1,4 @@
 Use this file to record your reflection on this assignment. 
 
 What worked, what didn't, what advice would you give someone taking this course in the future?
+I think that the biggest obstacle I had was just figuring out how to start, and with the overview video and help in-class, I finally got a better understanding of it. I had to look at the procedural code a lot during this process, which was something that I noticed is a guideline for any object-oriented programming task. I think that the best advice I could give is to start by writing your pseudocode and definitions with the skeletal structure of your program first before trying to take the task head-on. That way, you don't have to worry much about conceptual errors. 
