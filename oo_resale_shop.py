@@ -1,35 +1,45 @@
+"""
+   Filename: oo_resale_shop.py
+Description: This contains the ResaleShop class, and is used to manage the inventory of computer objects.
+     Author: Tensae Mekonnen
+       Date: 10 February 2026
+       
+       Note: Worked on sorting methods and attributes with Elizabeth Sarpong and Jode Redding in discussion.
+"""
 #Importing Computer class 
 from Computer import Computer
 from typing import Dict, Optional
 class ResaleShop:
 
-    # What attributes will it need?
+    #Attributes
     inventory: list = []
     computer: Dict = ""
     new_price: int = 0
     new_os: Optional[str] = None
 
-    # How will you set up your constructor?
-    # Remember: in python, all constructors have the same name (__init__)
+    #Constructor creating an empty inventory for this first round 
     def __init__(self):
         self.inventory = []
 
-    # What methods will you need?
+    #Method for adding a computer to the shop inventory, taking in computer object to add
     def buy(self, computer):
         self.inventory.append(computer)
     
+    #Method for updating the price of a computer if it's in the inventory given computer object, and new price
     def update_price(self, computer, new_price):
         if computer in inventory:
             self.computer["price"] = new_price
         else:
             print("Computer not found. Cannot update price.")
 
+    #Method for removing a computer object from the inventory 
     def sell(self, computer):
         if computer in self.inventory:
             self.inventory.remove(computer)
         else: 
             print("Computer not found. Please select another item to sell.")
 
+    #Prints the details of every computer object in the inventory
     def print_inventory(self):
     # If the inventory is not empty
         if self.inventory:
@@ -40,6 +50,7 @@ class ResaleShop:
         else:
             print("No inventory to display.")
 
+    #Adjusting price of computer objects depending on year made, and installs new_os, if it is provided.
     def refurbish(self, computer, new_os = None):
         if computer in self.inventory:
             if int(computer["year_made"]) < 2000:

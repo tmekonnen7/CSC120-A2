@@ -37,9 +37,9 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 **YES** 4 pts: Program executes fully & consistently without crashing (exception/freeze)
 
-_____ 1 pt: Classes & class members all have header comments
+**YES** 1 pt: Classes & class members all have header comments
 
-_____ 1 pt: Clear and consistent indentation
+**YES** 1 pt: Clear and consistent indentation
 
 **YES** 1 pt: Adheres to conventions on naming / capitalization
 
